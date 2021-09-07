@@ -727,27 +727,56 @@
   margin-left: 20px;
 }
 
-.main-content-overlay .content-overlay--inner .question-form .form-group input[type="checkbox"] {
-  min-width: 20px;
-  height: 20px;
-  position: relative;
-  float: left;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 3px solid #ffffff;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"] {
+  display: none;
 }
 
-.main-content-overlay .content-overlay--inner .question-form .form-group input[type="checkbox"]:checked {
-  background-color: #253849;
-  -webkit-box-shadow: inset 0px 0px 0px 5px #ffffff;
-          box-shadow: inset 0px 0px 0px 5px #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.75em;
+  margin-right: 2em;
+  cursor: pointer;
+  line-height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"] + label:before,
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  color: #ffffff;
+  font-family: Times;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"] + label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: inset 0 0 0 0.2em #ffffff, inset 0 0 0 1em #ffffff;
+          box-shadow: inset 0 0 0 0.2em #ffffff, inset 0 0 0 1em #ffffff;
+}
+
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"] + label:hover:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: inset 0 0 0 0.3em #ffffff, inset 0 0 0 1em #c6c6c6;
+          box-shadow: inset 0 0 0 0.3em #ffffff, inset 0 0 0 1em #c6c6c6;
+}
+
+.main-content-overlay .content-overlay--inner .question-form .form-group input[type="radio"]:checked + label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: inset 0 0 0 0.2em #ffffff, inset 0 0 0 1em #000000;
+          box-shadow: inset 0 0 0 0.2em #ffffff, inset 0 0 0 1em #000000;
 }
 
 .main-content-overlay .content-overlay--inner .question-form .form-btn {
