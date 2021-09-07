@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.vct-master-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.reveal {
+    display: block !important;
+}
+
+
+// menu
+.menu-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000000;
+    z-index: 3;
+    bottom: 3%;
+    right: 3%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        height: 2px;
+        width: 40%;
+        margin-bottom: 10px;
+        display: block;
+        background-color: #000000;
+
+        &:nth-child(2) {
+            margin-bottom: 0;
+        }
+    }
+}

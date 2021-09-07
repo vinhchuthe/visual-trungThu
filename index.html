@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung thu Visual Game</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <div class="vct-master-wrapper">
+        <section class="intro">
+            <div class="intro-wrapper">
+                <div class="intro-gr-left">
+                    <div class="intro-title">
+                        <img src="./assets/image/pc-title-b.png" alt="">
+                    </div>
+                    <div class="intro-content">
+                        <p>
+                            Hãy quan sát thật kĩ, biết đâu những gì bạn thấy ở đây lại là gợi ý cho những câu hỏi sắp
+                            tới.
+                        </p>
+                        <button type="button" class="intro-btn" id="btn-intro">ĐI CHƠI THÔI!</button>
+                    </div>
+                </div>
+                <div class="intro-gr-right">
+                    <div class="intro-img">
+                        <img src="./assets/image/artwork1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="menu-wrapper">
+                <div class="menu-content">
+                    <div class="menu-content-left">
+                        <div class="menu-title">
+                            <img src="./assets/image/title-w.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-content-right">
+                        <ul>
+                            <li class="nav-link active" data-id="prize">
+                                <span></span>
+                                <p>PHẦN THƯỞNG</p>
+                            </li>
+                            <li class="nav-link" data-id="result">
+                                <span></span>
+                                <p>XEM KẾT QUẢ</p>
+                            </li>
+                        </ul>
+                        <div class="nav-content-wrapper">
+                            <div class="nav-content" id="result">
+                                <div class="result-num">
+                                    <span>BẠN ĐÃ TRẢ LỜI ĐÚNG</span>
+                                    <h4>5/5</h4>
+                                    <span>CÂU HỎI</span>
+                                </div>
+                                <div class="result-num">
+                                    <span>TRONG THỜI GIAN</span>
+                                    <h4>5.123</h4>
+                                    <span>GIÂY</span>
+                                </div>
+                                <div class="result-btn-gr">
+                                    <button type="button" class="result-btn">GỬI KẾT QUẢ</button>
+                                    <button type="button" class="result-btn">ĐI KHOE THÔI</button>
+                                </div>
+                            </div>
+                            <div class="nav-content reveal" id="prize">
+                                <div class="prize-detail">
+                                    <div class="prize-detail-b">
+                                        <h5>01 giải nhất</h5>
+                                        <span>thẻ điện thoại</span>
+                                        <span>trị giá 300.000vnd</span>
+                                    </div>
+                                    <div class="prize-detail-n">
+                                        <p>
+                                            Dành cho người trả lời đúng cả 5 câu hỏi trong khoảng thời gian ngắn nhất
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="prize-detail">
+                                    <div class="prize-detail-b">
+                                        <h5>03 giải nhì</h5>
+                                        <span>thẻ điện thoại</span>
+                                        <span>trị giá 50.000vnd</span>
+                                    </div>
+                                    <div class="prize-detail-n">
+                                        <p>
+                                            Dành cho 3 người trả lời đúng 5 câu hỏi trong khoảng thời gian ngắn nhất
+                                            (xếp hạng sau giải nhất)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-overlay">
+                    <div class="team-logo">
+                        <img src="./assets/image/credit.png" alt="">
+                    </div>
+                    <div class="close-btn-wrapper" id="btn-close">
+                        <div class="close-btn">
+                            <img src="./assets/image/close-btn.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="main-content-wrapper">
+                <div class="content-text text1">
+                    <div class="content-text-inner">
+                        <div class="content-header">
+                            <span>01</span>
+                            <h3>
+                                mặt nạ trung thu giấy bồi
+                            </h3>
+                        </div>
+                        <div class="content-body">
+                            <p>
+                                Mặt nạ Trung thu truyền thông đều được làm từ giấy bồi. Giấy bồi được xé nhỏ dán lên
+                                khuôn
+                                xi măng để tạo hình khuôn mặt. 5 - 6 lớp giấy vụn dính chồng lên nhau bằng hồ dán làm từ
+                                bột
+                                sắn. Công đoạn này yêu cầu độ tỉ mỉ cao để lớp mặt nạ được căng, mịn. Sau khi được phơi
+                                khô,
+                                mặt nạ giấy sẽ được tô lần lượt nhiều lớp màu, lớp này khô thì mới tô lớp sau lên để
+                                tránh
+                                bị nhòe màu.
+                            </p>
+
+                            <p>
+                                Mặt nạ giấy bồi truyền thông phổ biến nhất với những tạo hình nhân vật như Thị Nở - Chí
+                                Phèo, Ông Địa, Tôn Ngộ Không, Trư Bát Giới, Tấm Cám và các con vật với những lớp ý nghĩa
+                                riêng. Ví như: Mặt nạ ông Địa tức vị Thổ thần, Thổ địa được thể hiện với hình dáng tròn
+                                vo
+                                và vui tươi như sự sung mãn đầy đủ của đất đai màu mỡ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img img1">
+                    <div class="content-img-inner">
+                        <img class="frame" id="img1" data-img="quest1" src="./assets/image/artwork2.png" alt="">
+                    </div>
+                </div>
+                <div class="content-text text2">
+                    <div class="content-text-inner">
+                        <div class="content-header">
+                            <span>02</span>
+                            <h3>
+                                Tiến Sĩ Giấy
+                            </h3>
+                        </div>
+                        <div class="content-body">
+                            <p>
+                                Trong mâm cỗ xưa thường xuất hiện ông tiến sĩ giấy. Đây là biểu tượng cho những người
+                                học
+                                hành giỏi giang, đỗ đạt được làm quan trong triều. Các gia đình bày ông tiến sĩ giấy
+                                trên
+                                mâm cỗ thể hiện mong muốn cho các bạn nhỏ ngoan ngoãn, học hành chăm chỉ và đỗ đạt thành
+                                tài.
+                            </p>
+
+                            <p>
+                                Ông tiến sĩ giấy thường được làm bằng giấy màu đỏ, màu vàng, có hoa cài mũ, thẻ bài cầm
+                                tay,
+                                mão trạng nguyên và áo bào sặc sỡ, dưới chân áo được trang trí cờ quạt, họa tiết ông hổ
+                                giản
+                                dị nhẹ nhàng.
+                            </p>
+                            <p>
+                                Sau khi phá cỗ, các bé sẽ rước ông tiến sĩ đi chơi với đoàn rước đèn đầy màu sắc lung
+                                linh.
+                                Sau đó ông tiến sĩ sẽ được trưng bày tại bàn học để các em luôn được nhắc nhớ về việc
+                                học
+                                hành.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img img2">
+                    <div class="content-img-inner">
+                        <img class="frame" id="img2" data-img="quest2" src="./assets/image/artwork2.png" alt="">
+                    </div>
+                </div>
+                <div class="content-text text3">
+                    <div class="content-text-inner">
+                        <div class="content-header">
+                            <span>03</span>
+                            <h3>
+                                Ông Múa Gậy Trông Trăng
+                            </h3>
+                        </div>
+                        <div class="content-body">
+                            <p>
+                                Gác bỏ gươm đao, ông múa gậy trông trăng, vào thời bình, chỉ cầm gậy nhảy múa xua đuổi
+                                vận
+                                xui. Song hành cùng tiến sĩ giấy, hai món đồ chơi truyền thống này như lời chúc của bố
+                                mẹ
+                                cho con đường học hành của các con hanh thông và gặp nhiều điều may mắn.
+                            </p>
+
+                            <p>
+                                Hai tay của ông cầm gậy dâng lên cao. Phía trên đầu ông là ông trăng tròn được làm bằng
+                                giấy
+                                màu vàng, khi trẻ con cầm chơi sẽ lắc lắc tạo ra hình tượng ông múa gậy trông trăng rất
+                                sinh
+                                động. Ngoài ra, hai bên hông ông múa gậy còn đeo hai chiếc túi, một bên đựng gạo, một
+                                bên
+                                đựng nước, đó vẫn là hình tượng từ xa xưa khi các ông ra trận. Sau khi cúng rằm, hai ông
+                                Múa
+                                gậy trông trăng được treo ở gần cửa sổ hoặc nơi có gió.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img img3">
+                    <div class="content-img-inner">
+                        <img class="frame" id="img3" data-img="quest3" src="./assets/image/artwork2.png" alt="">
+                    </div>
+                </div>
+                <div class="content-text text4">
+                    <div class="content-text-inner">
+                        <div class="content-header">
+                            <span>04</span>
+                            <h3>
+                                Đèn Kéo Quân Trung Thu
+                            </h3>
+                        </div>
+                        <div class="content-body">
+                            <p>
+                                Khi xưa cảm động với tấm lòng hiếu thảo của một chàng trai trẻ tên Lục Đức, Thái Thượng
+                                Lão
+                                Quân đã báo mộng cho chàng cách làm đèn kéo quân để dâng vua. Khi đốt lên, đèn quay
+                                chong
+                                chóng và hiện lên sáu màu sắc rực rỡ với hình ảnh vua, quan, người, ngựa nối đuôi nhau,
+                                rất
+                                sinh động.
+                            </p>
+
+                            <p>
+                                Theo Nghệ nhân Nguyễn Văn Quyền, người đã dành cả cuộc đời để tạo ra những chiếc đèn kéo
+                                quân, đèn có thể có bốn mặt hoặc sáu mặt. Bốn mặt tượng trưng cho tứ thân phụ mẫu gồm bố
+                                mẹ
+                                mình, bố mẹ chồng (vợ); loại đèn sáu mặt là tượng trưng cho lục thân phụ mẫu (thêm bố mẹ
+                                nuôi) hoặc cũng có thể tượng trưng sáu cá tính của con người: thương, ghét, giận, hờn,
+                                buồn,
+                                vui.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img img4">
+                    <div class="content-img-inner">
+                        <img class="frame" id="img4" data-img="quest4" src="./assets/image/artwork2.png" alt="">
+                    </div>
+                </div>
+                <div class="content-text text5">
+                    <div class="content-text-inner">
+                        <div class="content-header">
+                            <span>05</span>
+                            <h3>
+                                Bánh Nướng Trung Thu Truyền Thống
+                            </h3>
+                        </div>
+                        <div class="content-body">
+                            <p>
+                                Bánh Trung thu xưa chỉ có 2 loại là bánh nướng và bánh dẹo với 2 loại nhân là nhân thập
+                                cẩm
+                                và đậu xanh.
+                            </p>
+
+                            <p>
+                                Bánh nướng làm bằng bột mỳ, vỏ màu nâu óng ánh, xốp bùi, nhân thập cẩm được chế biến từ
+                                nhiều nguyên liệu như lạp xưởng, xá xíu, mỡ lợn, hạt dừa, hạt sen, nước hoa bưởi.. Bánh
+                                dẻo
+                                được làm từ bột nếp, màu trắng tinh, dai, dẻo. Nhân bánh dẻo cũng đa dạng nhưng vẫn
+                                thiên về
+                                vị ngọt hơn là vị mặn như bánh nướng.
+                            </p>
+                            <p>
+                                Các nguyên liệu tạo nên hai loại bánh truyền thống đều khá mộc mạc, dễ tìm nhưng lại
+                                được
+                                chọn lọc kĩ càng để tạo ra hương vị có thể hấp dẫn bao thế hệ trẻ em khi xưa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-img img5">
+                    <div class="content-img-inner">
+                        <img class="frame" id="img5" data-img="quest5" src="./assets/image/artwork2.png" alt="">
+                    </div>
+                </div>
+                <div class="content-text text6">
+                    <div class="content-text-inner">
+                        <div class="content-header">
+                            <h3>
+                                phá cỗ thôi!
+                            </h3>
+                        </div>
+                        <div class="content-body">
+                            <button type="button" class="result-btn" id="btn-result">XEM KẾT QUẢ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-content-overlay hidden">
+            <div class="content-overlay--bg"></div>
+            <div class="content-overlay--img">
+                <img src="./assets/image/artwork2.png" alt="">
+            </div>
+            <div class="content-overlay--inner">
+                <div class="question-wrapper" id="quest1">
+                    <div class="overlay-header">
+                        <span>01</span>
+                        <h3>
+                            mặt nạ trung thu giấy bồi
+                        </h3>
+                    </div>
+                    <form class="question-form">
+                        <p>
+                            Dưới đây là 6 miếng ghép của 3 chiếc mặt nạ trung thu. Hãy chọn 1 trong 3 phương án ABC dưới
+                            đây, đâu là các cặp mảnh ghép đúng với tạo hình của các mặt nạ giấy bồi truyền thống.
+                        </p>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer1" name="answer1" value="1">
+                            <div class="checkbox-circle"></div>
+                            <label for="answer1">
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                ex ea commodo
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer2" name="answer2" value="2">
+                            <label for="answer2">
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                ex ea commodo
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer3" name="answer3" value="3">
+                            <label for="answer3">
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                ex ea commodo
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer4" name="answer4" value="4">
+                            <label for="answer4">
+                                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                ex ea commodo
+                            </label>
+                        </div>
+
+                        <button class="form-btn" type="button">ĐI XEM TIẾP</button>
+                    </form>
+                </div>
+                <div class="question-wrapper" id="quest2">
+                    <div class="overlay-header">
+                        <span>02</span>
+                        <h3>
+                            Tiến Sĩ Giấy
+                        </h3>
+                    </div>
+                    <form class="question-form">
+                        <p>
+                            Hãy tìm xem nhân vật Tiến sĩ Giấy xuất hiện ở cửa hàng nào trong 3 cửa hàng dưới đây:
+                        </p>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer1" name="answer1" value="1">
+                            <div class="checkbox-circle"></div>
+                            <label for="answer1">
+                                Cửa hàng số 1
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer2" name="answer2" value="2">
+                            <label for="answer2">
+                                Cửa hàng số 2
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer3" name="answer3" value="3">
+                            <label for="answer3">
+                                Cửa hàng số 3
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer4" name="answer4" value="4">
+                            <label for="answer4">
+                                Cửa hàng số 4
+                            </label>
+                        </div>
+
+                        <button class="form-btn" type="button">ĐI XEM TIẾP</button>
+                    </form>
+                </div>
+                <div class="question-wrapper" id="quest3">
+                    <div class="overlay-header">
+                        <span>03</span>
+                        <h3>
+                            Ông Múa Gậy Trông Trăng
+                        </h3>
+                    </div>
+                    <form class="question-form">
+                        <p>
+                            Theo truyền thống, ông múa gậy trông trăng thường được đặt ở vị trí nào sau khi cúng rằm.
+                            Hãy chọn 1 trong 4 đáp án ABCD ở dưới nhé:
+                        </p>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer1" name="answer1" value="1">
+                            <div class="checkbox-circle"></div>
+                            <label for="answer1">
+                                Đặt trên thềm đất trước cửa nhà
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer2" name="answer2" value="2">
+                            <label for="answer2">
+                                Treo trên khung cửa sổ
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer3" name="answer3" value="3">
+                            <label for="answer3">
+                                Đặt trên bàn học
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer4" name="answer4" value="4">
+                            <label for="answer4">
+                                Ông Tiến Sĩ ở đâu thì Ông múa gậy ở đó
+                            </label>
+                        </div>
+
+                        <button class="form-btn" type="button">ĐI XEM TIẾP</button>
+                    </form>
+                </div>
+                <div class="question-wrapper" id="quest4">
+                    <div class="overlay-header">
+                        <span>04</span>
+                        <h3>
+                            Đèn Kéo Quân Trung Thu
+                        </h3>
+                    </div>
+                    <form class="question-form">
+                        <p>
+                            Trong vô vàn món bảo vật của Thái Thượng lão Quân, có ai tìm thấy chiếc đèn kéo quân đang ở
+                            đâu không?
+                        </p>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer1" name="answer1" value="1">
+                            <div class="checkbox-circle"></div>
+                            <label for="answer1">
+                                Vị trí số 1
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer2" name="answer2" value="2">
+                            <label for="answer2">
+                                Vị trí số 2
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer3" name="answer3" value="3">
+                            <label for="answer3">
+                                Vị trí số 3
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer4" name="answer4" value="4">
+                            <label for="answer4">
+                                Vị trí số 4
+                            </label>
+                        </div>
+
+                        <button class="form-btn" type="button">ĐI XEM TIẾP</button>
+                    </form>
+                </div>
+                <div class="question-wrapper" id="quest5">
+                    <div class="overlay-header">
+                        <span>05</span>
+                        <h3>
+                            Bánh Nướng Trung Thu Truyền Thống
+                        </h3>
+                    </div>
+                    <form class="question-form">
+                        <p>
+                            Trong mê cung uốn lượn, chỉ có 1 con đường dẫn tới bánh Nướng truyền thống. Trên con đường
+                            đúng sẽ có một số nguyên liệu tạo ra nhân bánh nướng truyền thông Bạn có đoán ra được đâu là
+                            con đường đúng trong 4 đáp án dưới đây:
+                        </p>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer1" name="answer1" value="1">
+                            <div class="checkbox-circle"></div>
+                            <label for="answer1">
+                                Vị trí số 1
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer2" name="answer2" value="2">
+                            <label for="answer2">
+                                Vị trí số 2
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer3" name="answer3" value="3">
+                            <label for="answer3">
+                                Vị trí số 3
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="answer4" name="answer4" value="4">
+                            <label for="answer4">
+                                Vị trí số 4
+                            </label>
+                        </div>
+
+                        <button class="form-btn" type="button">ĐI XEM TIẾP</button>
+                    </form>
+                </div>
+            </div>
+            <div class="overlay-close" id="overlay-btn">
+                <img src="./assets/image/close-btn-w.png" alt="">
+            </div>
+        </section>
+        <div class="menu-btn" id="menu">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.nicescroll.js"></script>
+    <script src="./assets/js/Tweenmax.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

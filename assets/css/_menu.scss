@@ -1,0 +1,245 @@
+$white: #ffffff;
+$gray: #f5f5f5;
+$black: #000000;
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transform: scaleY(0);
+    transform-origin: top;
+
+    .menu-wrapper {
+        width: 85%;
+        height: 90%;
+        padding: 40px;
+        position: relative;
+        opacity: 0;
+
+        .menu-content {
+            display: flex;
+            justify-content: space-between;
+
+            .menu-content-left {
+                flex: 0 0 35%;
+                max-width: 35%;
+
+                .menu-title {
+                    img {
+                        width: initial;
+                        height: auto;
+                        display: block;
+                    }
+                }
+            }
+
+            .menu-content-right {
+                flex: 0 0 25%;
+                max-width: 25%;
+                display: flex;
+                flex-direction: column;
+
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    margin-bottom: 30px;
+                    flex: 0 0 20%;
+
+                    .nav-link {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 30px;
+
+                        span {
+                            display: block;
+                            height: 1px;
+                            width: 20%;
+                            background-color: white;
+                            transform: scaleX(0);
+                            transform-origin: left;
+                        }
+
+                        p {
+                            font-family: 'Roboto';
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 23px;
+                            text-align: right;
+                            color: $white;
+                            cursor: pointer;
+                        }
+
+                        &.active {
+                            span {
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+
+                .nav-content-wrapper {
+                    flex: 0 0 75%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .nav-content {
+                        display: none;
+
+                        .prize-detail {
+                            padding: 20px;
+                            border: 1px solid $white;
+                            margin-bottom: 30px;
+
+                            .prize-detail-b {
+                                margin-bottom: 15px;
+
+                                h5 {
+                                    font-size: 30px;
+                                    line-height: 26px;
+                                    color: $white;
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    text-align: right;
+                                    text-transform: uppercase;
+                                    margin-bottom: 10px;
+                                }
+
+                                span {
+                                    display: block;
+                                    color: $white;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    text-align: right;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            .prize-detail-n {
+                                p {
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    text-align: right;
+                                    color: $white;
+                                }
+                            }
+                        }
+
+                        .result-num {
+                            margin-bottom: 40px;
+
+                            span {
+                                color: $white;
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 12px;
+                                line-height: 14px;
+                                display: block;
+                                margin: 3px 0;
+                                text-align: center;
+                            }
+
+                            h4 {
+                                font-size: 95px;
+                                line-height: 1;
+                                text-transform: uppercase;
+                                font-family: 'ViaodaLibre';
+                                font-style: normal;
+                                font-weight: normal;
+                                color: $white;
+                                text-align: center;
+                            }
+                        }
+
+                        .result-btn-gr {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .result-btn {
+                                background-color: $white;
+                                border: 1px solid $black;
+                                outline: none;
+                                cursor: pointer;
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 14px;
+                                line-height: 16px;
+                                margin: 0 15px;
+                                padding: 15px 30px;
+                                transition: all 0.4s;
+
+                                &:hover {
+                                    background-color: $black;
+                                    color: $white;
+                                    border: 1px solid $white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .team-logo {
+            position: absolute;
+            bottom: 0;
+            left: 3%;
+            width: 8%;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .close-btn-wrapper {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            .close-btn {
+                padding: 22px;
+                background-color: $white;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    transition: all 0.4s;
+                }
+
+                &:hover {
+                    img {
+                        transition: all 0.4s;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
