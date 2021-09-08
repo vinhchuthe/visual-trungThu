@@ -1,10 +1,21 @@
 //---------------- niceScroll ----------------
 
-$(".main-content-wrapper").niceScroll({
+var nice = $(".main-content-wrapper").niceScroll({
     // horizrailenabled: false,
     scrollspeed: '50',
+    autohidemode: 'false',
     overflowy: 'false'
 });
+
+var _super = nice.getContentSize;
+
+nice.getContentSize = function () {
+    var page = _super.call(nice);
+    page.h = nice.win.height();
+    return page;
+}
+
+$('.nicescroll-rails.nicescroll-rails-vr').remove();
 
 
 $(document).ready(function () {
@@ -25,6 +36,15 @@ $(document).ready(function () {
     $('#menu').click(function () {
         openMenu();
     });
+
+    $('#btn-result').click(function() {
+        var nav = $(this).attr('data-nav');
+        $('.nav-link').removeClass('active');
+        $('.result-link').addClass('active');
+        $('.nav-content').removeClass('reveal');
+        $('#' + nav).addClass('reveal');
+        openMenu();
+    })
 
     $('#btn-close').click(function () {
         closeMenu();

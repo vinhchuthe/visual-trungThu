@@ -33,6 +33,48 @@ $black: #000000;
 
                 img {
                     width: initial;
+                    height: auto;
+                    display: block;
+
+                    @media (max-width: 1680px) and (max-height: 1050px) {
+                        width: 90%;
+                    }
+
+                    @media (max-width: 1600px) and (max-height: 900px) {
+                        width: 75%;
+                    }
+
+                    @media (max-width: 1440px) and (max-height: 900px) {
+                        width: 80%;
+                    }
+
+                    @media (max-width: 1400px) and (max-height: 1050px) {
+                        width: 100%;
+                    }
+
+                    @media (max-width: 1366px) and (max-height: 768px) {
+                        width: 70%;
+                    }
+
+                    @media (max-width: 1280px) and (max-height: 800px) {
+                        width: 75%;
+                    }
+
+                    @media (max-width: 1280px) and (max-height: 720px) {
+                        width: 65%;
+                    }
+
+                    @media (max-width: 1152px) and (max-height: 864px) {
+                        width: 95%;
+                    }
+
+                    @media (max-width: 1024px) and (max-height: 768px) {
+                        width: 90%;
+                    }
+
+                    @media (max-width: 800px) and (max-height: 600px) {
+                        width: 65%;
+                    }
                 }
             }
 
@@ -45,6 +87,16 @@ $black: #000000;
                     line-height: 18px;
                     color: $black;
                     margin-bottom: 20px;
+
+                    @media (max-width: 1280px) and (max-height: 720px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+
+                    @media (max-width: 800px) and (max-height: 600px) {
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
                 }
 
                 .intro-btn {
@@ -65,7 +117,27 @@ $black: #000000;
                         background-color: $gray;
                         color: $black;
                     }
+
+                    @media (max-width: 1366px) and (max-height: 768px) {
+                        padding: 10px 20px;
+                    }
+
+                    @media (max-width: 1280px) and (max-height: 720px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+
+                    @media (max-width: 800px) and (max-height: 600px) {
+                        padding: 5px 15px;
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
                 }
+            }
+
+            @media (max-width: 800px) and (max-height: 600px) {
+                flex: 0 0 30%;
+                max-width: 30%;
             }
         }
 
