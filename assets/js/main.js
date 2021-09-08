@@ -37,7 +37,7 @@ $(document).ready(function () {
         openMenu();
     });
 
-    $('#btn-result').click(function() {
+    $('#btn-result').click(function () {
         var nav = $(this).attr('data-nav');
         $('.nav-link').removeClass('active');
         $('.result-link').addClass('active');
@@ -120,12 +120,21 @@ function openQuestion(id) {
         transition: 'all 1s',
     });
     setTimeout(function () {
-        $('.content-overlay--img').css({
-            opacity: 1,
-            left: '25%',
-            transform: 'translate(-50% , -50% ) scale(1.15)',
-            transition: 'all 1.25s'
-        });
+        if ($(window).width() <= 1024) {
+            $('.content-overlay--img').css({
+                opacity: 1,
+                left: '',
+                transform: 'scale(1)',
+                transition: 'all 1.25s'
+            });
+        } else {
+            $('.content-overlay--img').css({
+                opacity: 1,
+                left: '25%',
+                transform: 'translate(-50% , -50% ) scale(1.15)',
+                transition: 'all 1.25s'
+            });
+        }
     }, 500);
     var question = new TimelineMax();
     question.to($('.content-overlay--inner'), 1, {
@@ -155,12 +164,21 @@ function closeQuestion() {
         transition: 'all 1s',
     });
     setTimeout(function () {
-        $('.content-overlay--img').css({
-            opacity: 0,
-            transition: 'all 0.4s',
-            left: '50%',
-            transform: 'translate(-50% , -50%) scale(0)',
-        })
+        if ($(window).width() <= 1024) {
+            $('.content-overlay--img').css({
+                opacity: 0,
+                transition: 'all 0.4s',
+                left: '',
+                transform: 'scale(0)',
+            })
+        } else {
+            $('.content-overlay--img').css({
+                opacity: 0,
+                transition: 'all 0.4s',
+                left: '50%',
+                transform: 'translate(-50% , -50%) scale(0)',
+            })
+        }
     }, 1000);
     setTimeout(function () {
         $('.main-content-overlay').removeClass('reveal');

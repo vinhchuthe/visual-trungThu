@@ -17,6 +17,24 @@
     display: block !important;
 }
 
+.hide-pc {
+    display: none;
+}
+
+.hide-mb {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .hide-pc {
+        display: block !important;
+    }
+
+    .hide-mb {
+        display: none !important;
+    }
+}
+
 
 // menu
 .menu-btn {
