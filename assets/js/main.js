@@ -174,7 +174,7 @@ function closeQuestion() {
                 transition: 'all 0.4s',
                 left: '',
                 transform: 'scale(0)',
-            })
+            });
         } else {
             $('.content-overlay--img').css({
                 opacity: 0,
@@ -185,6 +185,9 @@ function closeQuestion() {
         }
     }, 1000);
     setTimeout(function () {
+        if ($(window).width() <= 1024) {
+            $("#question-detail").scrollTop(0);
+        }
         $('.main-content-overlay').removeClass('reveal');
         $('.question-wrapper').removeClass('reveal');
     }, 1500);
