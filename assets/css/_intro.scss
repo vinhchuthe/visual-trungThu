@@ -80,10 +80,17 @@ $black: #000000;
                         height: 10vh;
                         margin: auto;
                     }
+
+                    @media (max-width: 767px) {
+                        height: 100%;
+                        width: auto;
+                    }
                 }
 
                 @media (max-width: 767px) {
                     margin-bottom: 20px;
+                    margin-top: 20px;
+                    height: 10%;
                 }
             }
 
@@ -160,11 +167,17 @@ $black: #000000;
 
                     @media (max-width: 767px) {
                         margin-bottom: 20px;
+                        height: 75%;
+                        width: auto;
                     }
                 }
 
                 @media (max-width: 1024px) {
                     text-align: center;
+                }
+
+                @media (max-width: 767px) {
+                    height: 80%;
                 }
             }
 
@@ -176,6 +189,10 @@ $black: #000000;
             @media (max-width: 1024px) {
                 flex: 0 0 100%;
                 max-width: 100%;
+            }
+
+            @media (max-width: 767px) {
+                height: 100%;
             }
         }
 
@@ -210,5 +227,9 @@ $black: #000000;
         @media (max-width: 767px) {
             padding: 0 15px;
         }
+    }
+
+    @media (max-width: 767px) {
+        height: 100%;
     }
 }
