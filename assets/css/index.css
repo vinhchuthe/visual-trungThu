@@ -1042,6 +1042,13 @@
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .main-content .main-content-wrapper {
+    width: 100vw;
+    overflow: auto;
+  }
+}
+
 .main-content .content-text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 35vw;

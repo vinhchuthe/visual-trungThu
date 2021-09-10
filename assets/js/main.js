@@ -1,24 +1,28 @@
-//---------------- niceScroll ----------------
-
-var nice = $(".main-content-wrapper").niceScroll({
-    // horizrailenabled: false,
-    scrollspeed: '50',
-    autohidemode: 'false',
-    overflowy: 'false'
-});
-
-var _super = nice.getContentSize;
-
-nice.getContentSize = function () {
-    var page = _super.call(nice);
-    page.h = nice.win.height();
-    return page;
-}
-
-$('.nicescroll-rails.nicescroll-rails-vr').remove();
-
-
 $(document).ready(function () {
+
+    //---------------- niceScroll ----------------
+
+    if ($(window).width() <= 1024) {
+        $(".main-content-wrapper").getNiceScroll().hide();
+    } else {
+        var nice = $(".main-content-wrapper").niceScroll({
+            // horizrailenabled: false,
+            scrollspeed: '50',
+            autohidemode: 'false',
+            overflowy: 'false'
+        });
+
+        var _super = nice.getContentSize;
+
+        nice.getContentSize = function () {
+            var page = _super.call(nice);
+            page.h = nice.win.height();
+            return page;
+        }
+
+        $('.nicescroll-rails.nicescroll-rails-vr').remove();
+    }
+
 
     // intro
     TweenMax.from($('.intro-img'), 1, {
