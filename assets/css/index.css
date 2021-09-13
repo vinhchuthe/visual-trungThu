@@ -1220,7 +1220,7 @@
 
 @media (max-width: 767px) {
   .main-content .content-text .content-text-inner {
-    padding: 15px;
+    padding: 25px;
   }
 }
 
@@ -1346,6 +1346,8 @@
   display: block;
   width: auto;
   height: 80%;
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1400px) and (max-height: 1050px) {
@@ -1525,7 +1527,7 @@
 @media (max-width: 767px) {
   .main-content .content-img .content-img-inner {
     width: 100vw;
-    padding: 20px;
+    padding: 25px;
   }
 }
 
